@@ -17,7 +17,7 @@ terraform {
   required_version = ">=1.1.5"
 
   backend "s3" {
-    bucket         = "state.tf.aws.rdscluster.mysqlaurora.conilius"
+    bucket         = "iacs3.bucket"
     key            = "terraform.tfstate/aurora"
     dynamodb_table = "terraform-lock"
     region         = "us-east-1"
