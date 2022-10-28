@@ -20,7 +20,8 @@ Postgres-Aurora  module
 ```hcl
 
 module "aurora" {
-   source = "git::https://github.com/Bkoji1150/aws-rdscluster-conilius-tf.git?ref=v1.1.11"
+   source = "git::https://github.com/aminkeng78/aws-Rds-repo/tree/main/examples/postgresql?ref=v1.1.11
+   
 
   component_name = var.component_name
   name           = local.name
@@ -68,7 +69,7 @@ Mysql-Aurora
 
 ```hcl
 module "aurora" {
- source = "git::https://github.com/Bkoji1150/aws-rdscluster-conilius-tf.git?ref=v1.1.0"
+ source = "git::https://github.com/aminkeng78/aws-Rds-repo/tree/main/examples/mysql?ref=v1.1.11"
 
 component_name = var.component_name
   name           = local.name
@@ -125,9 +126,3 @@ No requirements.
 |------|---------|
 | <a name="provider_aws"></a> [aws](#provider\_aws) | n/a |
 | <a name="provider_random"></a> [random](#provider\_random) | n/a |
-
-## Modules
-
-## Authors
-This module was build and maintained by [kojibello](aminkengc7@gmail.com).
-For any further questions you and reach me on [Number](+12024288812)
